@@ -16,43 +16,17 @@ namespace snake
             Point p2 = new Point(4, 5, '#');
             p2.Draw();
 
-            Point p3 = new Point(7, 9, '@');
-            p3.Draw();
+            HorizontalLine line = new HorizontalLine(0, 70, 12, '-');
+            line.Drow();
 
-            Point p4 = new Point(13, 15, '$');
-            p4.Draw();
+            HorizontalLine line1 = new HorizontalLine(0, 70, 0, '-');
+            line1.Drow();
 
+            VertikalLine line2 = new VertikalLine(0, 12, 0, '|');
+            line2.Drow();
 
-            List<int> numList = new List<int>();
-            numList.Add(0);
-            numList.Add(1);
-            numList.Add(2);
-
-            int x = numList[0];
-            int y = numList[1];
-            int z = numList[2];
-
-            foreach (int i in numList) 
-            {
-                Console.WriteLine(i);
-            }
-
-            numList.RemoveAt(0);
-
-            List<char> symvoly = new List<char>();
-            symvoly.Add('*');
-            symvoly.Add('#');
-
-            foreach(char k in symvoly)
-            {
-                Console.WriteLine(k);
-            }
-
-            List<Point> plist = new List<Point>();
-            plist.Add(p1);
-            plist.Add(p2);
-            plist.Add(p3);
-            plist.Add(p4);
+            VertikalLine line3 = new VertikalLine(0, 12, 70, '|');
+            line3.Drow();
 
             Console.ReadLine();
         }
