@@ -22,10 +22,10 @@ namespace snake
             HorizontalLine line1 = new HorizontalLine(0, 70, 0, '-');
             line1.Drow();
 
-            VertikalLine line2 = new VertikalLine(0, 12, 0, '|');
+            VerticalLine line2 = new VerticalLine(0, 12, 0, '|');
             line2.Drow();
 
-            VertikalLine line3 = new VertikalLine(0, 12, 70, '|');
+            VerticalLine line3 = new VerticalLine(0, 12, 70, '|');
             line3.Drow();
 
             Console.ReadLine();
